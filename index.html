@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-black p-5 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Gym Fitness</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#" class="hover:text-gray-400">About</a></li>
+                <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="relative h-screen flex items-center justify-center text-center">
+        <img src="images/gym1.png" alt="Gym Image" class="absolute w-full h-full object-cover opacity-50">
+        <div class="relative z-10">
+            <h2 class="text-5xl font-extrabold typing-text">Push Your Limits</h2>
+            <p>🔥 Stronger Every Day. Start Your Journey Today!</p>
+            <p class="text-xl mt-3">Join us today and start your fitness journey!</p>
+            <a href="javascript:void(0);" class="btn-hover mt-5 inline-block px-6 py-3 bg-red-500 rounded-full text-lg font-bold">Join Now</a>
+
+        </div>
+    </section>
+    <section class="p-10 text-center">
+        <h2 class="text-4xl font-bold">Our Services</h2>
+        <p class="mt-3 text-lg">We offer personalized training, group classes, and state-of-the-art equipment.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold">Personal Training</h3>
+                <p class="mt-2">Get one-on-one coaching with our expert trainers.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold">Group Classes</h3>
+                <p class="mt-2">Join our high-energy classes and stay motivated.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold">Advanced Equipment</h3>
+                <p class="mt-2">Train with the latest state-of-the-art fitness equipment.</p>
+            </div>
+        </div>
+        <div>
+       
+        
+    </div>
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <img src="images/gym5.png" alt="Service 1" class="rounded-lg shadow-lg">
+        <img src="images/gym6.png" alt="Service 2" class="rounded-lg shadow-lg">
+        <img src="images/gym7.png" alt="Service 3" class="rounded-lg shadow-lg">
+    </div>
+</section>
+
+    
+
+    <section class="p-10 text-center bg-gray-800">
+        <h2 class="text-4xl font-bold">Our Trainers</h2>
+        <p class="mt-3 text-lg">Meet our experienced and certified trainers who will guide you through your journey.
+        Our Gym  is known for the competent personal trainers and extraordinary personal training offered by them. The individuals seeking for serious goal-oriented fitness, personalized guidance, motivation, and specialized workout plans, Our Gym personal training program is for them.
+        </p>
+    </section>
+     <section>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"  >
+       <img src="images/gym2.png" alt="Service 1" class="rounded-lg shadow-lg" >
+        <img src="images/gym3.png" alt="Service 2" class="rounded-lg shadow-lg" >
+        <img src="images/gym4.png" alt="Service 3" class="rounded-lg shadow-lg">
+    </div>
+</section>
+
+
+<section class="p-10 text-center bg-gray-800">
+    <h2 class="text-4xl font-bold text-white">Membership Plans</h2>
+    <p class="mt-3 text-lg text-gray-300">Choose the plan that fits your needs and start your fitness transformation today.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer" onclick="openForm('basic')">
+            <h3 class="text-2xl font-bold text-white">Basic Plan</h3>
+            <p class="mt-2 text-gray-300">Access to gym facilities and standard equipment.</p>
+            <p class="mt-2 font-bold text-white">$20/month</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer" onclick="openForm('premium')">
+            <h3 class="text-2xl font-bold text-white">Premium Plan</h3>
+            <p class="mt-2 text-gray-300">Includes personal training sessions and group classes.</p>
+            <p class="mt-2 font-bold text-white">$50/month</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer" onclick="openForm('vip')">
+            <h3 class="text-2xl font-bold text-white">VIP Plan</h3>
+            <p class="mt-2 text-gray-300">All-inclusive access with customized training and nutrition plans.</p>
+            <p class="mt-2 font-bold text-white">$100/month</p>
+        </div>
+    </div>
+    
+
+    <!-- Forms for Each Plan (Hidden by default) -->
+    <div id="basicForm" class="hidden p-10 text-center bg-gray-900 mt-6">
+        <h2 class="text-4xl font-bold text-white">Basic Plan Form</h2>
+        <form>
+            <label class="block text-left text-white">Enter Name:</label>
+            <input type="text" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Name">
+            <label class="block text-left text-white">Enter Email:</label>
+            <input type="email" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Email">
+            <label class="block text-left text-white">Enter Phone:</label>
+            <input type="tel" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Phone">
+            <button class="w-full p-2 bg-red-500 rounded text-white font-bold mt-4">Submit</button>
+        </form>
+    </div>
+
+    <div id="premiumForm" class="hidden p-10 text-center bg-gray-900 mt-6">
+        <h2 class="text-4xl font-bold text-white">Premium Plan Form</h2>
+        <form>
+            <label class="block text-left text-white">Enter Name:</label>
+            <input type="text" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Name">
+            <label class="block text-left text-white">Enter Email:</label>
+            <input type="email" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Email">
+            <label class="block text-left text-white">Enter Phone:</label>
+            <input type="tel" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Phone">
+            <button class="w-full p-2 bg-red-500 rounded text-white font-bold mt-4">Submit</button>
+        </form>
+    </div>
+
+    <div id="vipForm" class="hidden p-10 text-center bg-gray-900 mt-6">
+        <h2 class="text-4xl font-bold text-white">VIP Plan Form</h2>
+        <form>
+            <label class="block text-left text-white">Enter Name:</label>
+            <input type="text" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Name">
+            <label class="block text-left text-white">Enter Email:</label>
+            <input type="email" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Email">
+            <label class="block text-left text-white">Enter Phone:</label>
+            <input type="tel" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Phone">
+            <button class="w-full p-2 bg-red-500 rounded text-white font-bold mt-4">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- JavaScript to Toggle Forms -->
+<script>
+    function openForm(plan) {
+        // Hide all forms
+        document.getElementById('basicForm').classList.add('hidden');
+        document.getElementById('premiumForm').classList.add('hidden');
+        document.getElementById('vipForm').classList.add('hidden');
+
+        // Show the selected form
+        document.getElementById(plan + 'Form').classList.remove('hidden');
+    }
+
+
+
+    function toggleForm() {
+        let formSection = document.getElementById("connect-form");
+        
+        // Toggle visibility
+        if (formSection.classList.contains("hidden")) {
+            formSection.classList.remove("hidden"); // Show form
+            formSection.scrollIntoView({ behavior: "smooth" }); // Scroll to form
+        } else {
+            formSection.classList.add("hidden"); // Hide form
+        }
+    }
+
+    </script>
+    
+
+
+
+    <section class="p-10 text-center bg-gray-800">
+        <h2 class="text-4xl font-bold">Connect With Us</h2>
+        <div class="max-w-lg mx-auto bg-gray-900 p-6 rounded-lg shadow-lg mt-6">
+            <form>
+                <label class="block text-left">Select Department:</label>
+                <select class="w-full p-2 rounded bg-gray-800 text-white mb-4">
+                    <option>General Inquiry</option>
+                    <option>Personal Training</option>
+                    <option>Membership</option>
+                </select>
+
+                <label class="block text-left">Enter Name:</label>
+                <input type="text" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Name">
+
+                <label class="block text-left">Enter Email:</label>
+                <input type="email" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Email">
+
+                <label class="block text-left">Enter Phone:</label>
+                <input type="tel" class="w-full p-2 rounded bg-gray-800 text-white mb-4" placeholder="Your Phone">
+
+                <label class="block text-left">Select State:</label>
+                <select class="w-full p-2 rounded bg-gray-800 text-white mb-4">
+                    <option>Delhi </option>
+                    <option>Gurgaon</option>
+                    <option>Prayagraj</option>
+                    <option>Ghazipur</option>
+                    <option>Bangalore</option>
+                </select>
+
+                <label class="block text-left">Select City:</label>
+                <select class="w-full p-2 rounded bg-gray-800 text-white mb-4">
+                    <option>Delhi</option>
+                    <option>Prayagraj</option>
+                    <option>Ghazipur</option>
+                </select>
+
+                <label class="block text-left">Select Gym:</label>
+                <select class="w-full p-2 rounded bg-gray-800 text-white mb-4">
+                    <option>Main Branch</option>
+                    <option>Downtown Gym</option>
+                    <option>Suburban Fitness</option>
+                </select>
+
+                <button class="w-full p-2 bg-red-500 rounded text-white font-bold mt-4">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function scrollToForm() {
+            // Find the Connect With Us section by ID and scroll to it smoothly
+            const formSection = document.getElementById('connect-form');
+            formSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+    
+
+
+    <footer class="bg-black p-5 text-center">
+        <p>&copy; 2024 Gym Fitness. All rights reserved.</p>
+    </footer>
+</body>
+</html>
